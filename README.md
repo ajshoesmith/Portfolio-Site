@@ -14,6 +14,8 @@ On this website, you will find a curated selection of my work, including:
 - Engineering projects
 - Technical skills and expertise
 
+# Navigate to the ./src/components for examples of my React components and scripts.
+
 ## 🌐 Website Features
 
 The website features several interactive elements to enhance the user experience, including:
