@@ -1,0 +1,29 @@
+@import url(./MasterStyles.css);
+
+.dropdown-content {
+    position: absolute;
+    background-color: var(--background-secondary);
+    min-width: 700px;
+    min-height: auto;
+
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+    z-index: 1;
+    border-radius: 8px;
+    margin-right: auto;
+    transition: opacity 0.2s linear;
+    transform: translate(-500px, 0);
+    line-height: 3em;
+    padding: 20px;
+
+}
+
+.dropdown-content ul {
+    list-style: none;
+}
+
+.dropdown-content li {
+    color: white;
+    font-size: 24px;
+}
+

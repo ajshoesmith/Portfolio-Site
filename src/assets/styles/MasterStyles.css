@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+/* 'Montserrat' */
+
+
+/* 1. Base Color Variables */
+:root {
+    /* Primary Colors */
+  --primary-colour: #397DCC; /* Vibrant Blue (for highlights, calls to action) */
+  --secondary-colour: #3A6D7E; /* Dark Teal (for secondary elements like nav bar) */
+
+  /* Background Colors */
+  --background-primary: #212425; /* Dark Charcoal with blue tint */
+  --background-secondary: #35393B; /* Darker Gray with blue tint */
+  --background-tertiary: #283A4C; /* Darker Gray with blue tint */
+  --background-container: #4A5A64; /* Medium Gray with blue undertone */
+
+  --container-colour: #397DCC; /* Blue-Tinted Container Color */
+
+  /* Text Colors */
+  --text-primary: #D0D8DF; /* Light Grayish Blue (main text) */
+  --text-secondary: #A0AAB4; /* Muted Blue-Grey (secondary text, less important text) */
+
+  /* Border/Accent Colors */
+  --border-colour: #B0B8C2; /* Soft Blue-Grey for borders or divider lines */
+
+  /* Button States */
+  --button-background: #FF5722; /* Vibrant Orange (for active button state) */
+  --button-hover: #BC6D3B; /* Slightly lighter orange for hover effect */
+
+  /* Link Color */
+  --link-colour: #4A90E2; /* Light Blue (for links) */
+  --link-hover: #FF5722; /* Vibrant Orange (for link hover state) */
+
+  /* Header */
+  --header-background: #15191D; /* Dark Charcoal with blue tint (for header background) */
+  --header-text-colour: #D0D8DF; /* Light Grayish Blue (for text in header) */
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.background {
+  background-image: linear-gradient(300deg, var(--background-secondary), var(--background-tertiary));
+   margin-top: '40px';
+}

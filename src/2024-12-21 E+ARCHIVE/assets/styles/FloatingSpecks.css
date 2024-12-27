@@ -1,0 +1,28 @@
+.background {
+    position: fixed;
+    width: 1000px;
+    height: 1000px;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .speck {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    animation: float 10s infinite;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0) translateX(0);
+    }
+    50% {
+      transform: translateY(-100vh) translateX(100vw);
+    }
+    100% {
+      transform: translateY(0) translateX(0);
+    }
+  }

@@ -1,0 +1,118 @@
+@import url(./MasterStyles.css);
+
+
+.table-of-contents {
+  position: sticky;
+  top: 50px;
+}
+
+.toc-toggle {
+  margin: 6px;
+  position: sticky;
+  top: 40px;
+
+  /* background-color: transparent;
+  border: 1px solid purple;
+  border-radius: 20px;
+  min-width:30px;
+  max-width:30px;
+  width: 30px;
+  height: 30px; */
+
+  background-color: var(--background-secondary);
+  border: 1px inset var(--border-colour); /* Default border color */
+  border-radius: 40px;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+.toc-toggle:hover {
+  background-color: white; /* Change SVG color on hover */
+}
+
+
+.toc-toggle svg {
+  width: 36px;
+  height: 36px;
+  stroke: white; /* Default icon color */
+  transition: stroke 0.3s ease; /* Smooth color transition for SVG */
+}
+
+.toc-toggle:hover svg {
+  stroke: var(--primary-colour); /* Change SVG color on hover */
+}
+
+
+.toc-container {
+  position: fixed;
+  top: 20px;  /* The sidebar will stick 20px from the top */
+  margin-left: 70px;
+  background-color: var(--background-primary);
+  border: 2px solid var(--primary-colour);
+  border-radius: 4px;
+  text-decoration: none;
+  width: 300px;
+  height: auto;
+  
+  scroll-behavior: smooth;
+
+  color: var(--text-primary);
+  z-index: 1000;
+}
+
+.toc-header {
+  background-color: var(--primary-colour);
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--background-secondary);
+  justify-content: space-between;
+  line-height: 1;
+  padding: 10px;
+}
+
+.toc-header p { 
+  cursor: pointer;
+  padding: 0px;
+  margin-left: 50px;
+}
+
+.toc-header p:hover{ 
+  color: white;
+}
+
+.toc-list ul {
+  
+  list-style-type: none;
+  padding: 0; /* Remove padding */
+  margin-left: 0; /* Remove margins */
+  margin-right: 0; /* Remove margins */
+}
+.toc-list li {
+  list-style-type: none;
+}
+
+.table-of-contents-container a:visited {
+    color: white;
+}
+
+.toc-index {
+    padding: 0.3em;
+    border-radius: 5px;
+}
+
+.toc-index:hover {
+  padding: 0.3em;
+  background-color: var(--background-tertiary);
+  cursor: pointer;
+}
+
+.toc-index a::before {
+  content: attr(data-index) ' - ';
+  color: var(--text-primary);
+  font-weight: bold;
+  margin-right: 5px;
+}

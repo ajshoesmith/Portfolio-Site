@@ -1,0 +1,40 @@
+@import url(./MasterStyles.css);
+
+.table-of-contents-container {
+    background-color: gray;
+    border: 5px solid black;
+    border-radius: 4px;
+    text-decoration: none;
+    width: 300px;
+    height: auto;
+    
+    scroll-behavior: smooth;
+}
+
+.table-of-contents-container a:visited {
+    color: white;
+}
+
+.table-of-contents-index {
+    padding: 0.3em;
+    border-radius: 5px;
+}
+
+.table-of-contents-index:hover {
+  padding: 0.3em;
+  background-color: burlywood;
+}
+
+/*
+.nested-list {
+    counter-reset: item;
+  }
+
+.nested-list li:before {
+    content: counters(item, ".") " ";
+    counter-increment: item;
+  }
+
+  .nested-list ol {
+    counter-reset: item;
+  }*/

@@ -1,0 +1,41 @@
+/* Master File (if applicable) */
+@import url('./MasterStyles.css');
+
+
+.page-centered {
+    background-color: var(--background-tertiary);
+    /* background-image: linear-gradient(270deg, var(--background-secondary), var(--background-tertiary)); */
+}
+
+.content-container {
+    
+    width: 80%; /* Adjust width as needed */
+    max-width: 800px; /* Optional: maximum width */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top:  auto 48px;
+    margin-bottom: 48px;
+
+    background-color: var(--background-primary); /* Background color for the container */
+    color: var(--text-primary);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: shadow for a subtle effect */
+    border-radius: 8px; /* Optional: rounded corners */
+
+    
+
+}
+
+.content-container img {
+    /* overflow-clip-margin: content-box; */
+    overflow: clip; 
+    object-fit:contain;
+
+    width: 100%;
+    height: auto;
+    max-height: 1000px;
+}
+
+.content-container h2 {
+    margin-top: 70px;
+}

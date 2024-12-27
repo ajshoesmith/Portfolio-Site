@@ -1,0 +1,16 @@
+/* Master File (if applicable) */
+@import url('./MasterStyles.css');
+
+.content-container {
+    width: 80%; /* Adjust width as needed */
+    max-width: 800px; /* Optional: maximum width */
+    padding: 20px;
+    background-color: lightgray; /* Background color for the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: shadow for a subtle effect */
+    border-radius: 8px; /* Optional: rounded corners */
+
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 48px;
+
+}

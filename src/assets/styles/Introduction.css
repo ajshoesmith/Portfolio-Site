@@ -1,0 +1,25 @@
+.introduction {
+    padding: 40px;
+
+}
+
+.introduction h1 {
+    font-size: 50px;
+    text-align: left;
+}
+
+.introduction body{
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+
+}
+
+.text-container {
+    width: 100%; /* Adjust the width as needed */
+    max-width: 800px; /* Maximum width to prevent it from getting too wide */
+    margin: 0 auto; /* Center the container */
+    text-align: left; /* Left-align the text */
+    background-image: none;
+}

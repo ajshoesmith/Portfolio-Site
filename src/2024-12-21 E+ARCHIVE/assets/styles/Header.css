@@ -1,0 +1,41 @@
+.root {
+  --black: #0E0F0E;
+  --pale-purple: #594D9C;
+  --gold: #FFC803;
+}
+
+/*#region HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0E0F0E;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+
+  .header h1 {
+    color:white;
+  }
+  /*#endregion HEADER */
