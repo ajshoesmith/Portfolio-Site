@@ -25,20 +25,20 @@ const projectsData= [
                     <h1 id="Title">{this.title}</h1>
                     <img src={this.image}/>
                     <p>
-                        "Legions" is a networked multiplayer real-time strategy game set during the end of the Roman Republic. Players act as commanders, managing resources and commanding armies in real-time battles. The game features a networking framework for synchronous battles, a backend web server for user data management, and an intuitive control system for unit management.
+                        "Legions" is a networked multiplayer real-time strategy game set during the end of the Roman Republic. Players act as commanders, managing resources and commanding armies in real-time battles. The game features a networking framework for synchronous battles, a back-end web server for user data management, and an intuitive control system for unit management.
                     </p>
 
                     <h2 id="Project Details">Project Details</h2>
                     <hr/>
                     <h3 id="Technologies Used">Technologies Used</h3>
-                    <p>The frameworks, languages, and tools utilised are:</p>
+                    <p>The frameworks, languages, and tools utilized are:</p>
                     <ul>
                         <li>C#</li>
                         <li>PHP</li>
                         <li>SQL</li>
                         <li>Apache</li>
                         <li>Unity</li>
-                        <li>FishNet Neworking</li>
+                        <li>FishNet Networking</li>
                     </ul>
                     <h3 id="Role and Duration">Role and Duration</h3>
                     <p>Primary developer, responsible for all systems except the modified Fog of War. Development began in May 2023, with a playable demo expected by May 2025.</p>
@@ -47,11 +47,11 @@ const projectsData= [
                     <hr/>
                     <h3 id="Context">Context</h3>
                     <p>
-                    "Legions" addresses the need for an engaging real-time strategy mobile game, which includes dozens of systems. A few select challenges include:
+                    "Legions" addresses the need for an engaging real-time strategy mobile game, which includes dozens of systems written in <strong>C#</strong> in the <strong>Unity game engine</strong>. Due to the large scope of the project, I will only discuss a few select challenges:
                     </p>
                     <ul>
                         <li>Networking for synchronous play.</li>
-                        <li>Backend web server and database for user data management.</li>
+                        <li>Back-end web server and database for user data management.</li>
                         <li>Intuitive input management for touch-screen users.</li>
                     </ul>
                      
@@ -65,7 +65,7 @@ const projectsData= [
                     Only essential input commands (e.g., movement or attack orders) are transmitted to the server, 
                     which reduces the risk of cheating and ensures consistency across all clients. 
                     This server-side validation of commands also ensures that the game state remains synchronized, even in the event of network instability.</p>
-                    <h3 id="Backend Web Server and Database">Backend Web Server and Database</h3>
+                    <h3 id="Back-End Web Server and Database">Back-End Web Server and Database</h3>
                     <figure style={{marginBottom: '40px'}}>
                         <video src={prjGameCampDemo} 
                         width='100%' height='400px' controls>       
@@ -74,11 +74,11 @@ const projectsData= [
                         <figcaption>Showcase of Web Server Utility in Base Scene</figcaption>
                     </figure>
                     <p> 
-                    For server-side user data management, I implemented a backend
+                    For server-side user data management, I implemented a back-end
                     system using <strong>Apache</strong>, <strong>PHP</strong>, and <strong>MySQL</strong>.
                     Apache handles incoming HTTP requests, while PHP manages authentication, session handling, and database interactions.
                     <br/><br/>
-                    The backend system ensures data integrity and security by storing user credentials, game progress, and other sensitive information in a <strong>MySQL database</strong>.
+                    The back-end system ensures data integrity and security by storing user credentials, game progress, and other sensitive information in a <strong>MySQL database</strong>.
                     I employed parameterized queries to prevent SQL injection attacks and ensure safe database access.
                     User session verification is handled by PHP scripts, which manage user authentication and maintain secure session states across multiple requests.
                     <br/><br/>
@@ -111,7 +111,7 @@ const projectsData= [
                     <h3 id="Outcomes">Outcomes</h3>
                     <ul>
                         <li>Successfully implemented a networking framework for synchronous multiplayer battles.</li>
-                        <li>Developed a backend web server and database to manage, store, and authenticate user data.</li>
+                        <li>Developed a back-end web server and database to manage, store, and authenticate user data.</li>
                         <li>Created an intuitive control system for touch-screen users, allowing efficient unit management.</li>
                         <li>Received positive preliminary feedback from early testers on the game's mechanics and user interface.</li>
                     </ul>
@@ -121,6 +121,7 @@ const projectsData= [
                         <li>Provide match rewards based upon progress and match performance.</li>
                         <li>Upgrade of control UI to provide real-time feedback and to provide further clarity.</li>
                     </ul>
+                    <p>*Note: The GitHub repository for this project is currently private, if you are interested in seeing a specific system, please reach out to me. I'd be happy to share or walk through a system.</p>
                 </div>
             );
         }
@@ -146,7 +147,7 @@ const projectsData= [
                     <h2 id="Project Details">Project Details</h2>
                     <hr/>
                     <h3 id="Skills & Tools Used">Skills & Tools Used</h3>
-                    <p>The frameworks, languages, and tools utilised are:</p>
+                    <p>The frameworks, languages, and tools utilized are:</p>
                     <ul>
                         <li>SolidWorks (3D CAD Modeling & Simulation)</li>
                         <li>Pneumatic Systems Design and Integration</li>
@@ -170,7 +171,7 @@ const projectsData= [
                     <h3 id="Fluid Delivery System">Fluid Delivery System</h3>
                     <p></p>
                     <ul>
-                        <li>The water delivery system was designed with a 2L air vessel and 1L water vessel using sustainable/recycable materials, connected by a servo-controlled 90-degree valve and nozzle controlled by a radio transmitter.</li>
+                        <li>The water delivery system was designed with a 2L air vessel and 1L water vessel using sustainable/recyclable materials, connected by a servo-controlled 90-degree valve and nozzle controlled by a radio transmitter.</li>
                         <li>Initial traditional nozzle designs failed to meet expectations, prompting a redesign based on research to create a more effective flat spray pattern.</li>
                         <li>The air vessel was upgraded to a 4L bottle to resolve pressure concerns outlined in <strong>FMEA</strong>, and a more durable nozzle holder was developed.</li>
                         <li>The system's mounting was finalized, securing both vessels to the chassis for stable operation, and further testing was conducted to finalize the nozzle design for fire extinguishing.</li>
@@ -197,6 +198,7 @@ const projectsData= [
                         </video>
                         <figcaption>Final Competition, Round 2</figcaption>
                     </figure>
+
                 </div>
             );
         }
@@ -206,8 +208,8 @@ const projectsData= [
         category: 'Frontend Development',
         image: thumbPortfolio,
         tags: ['HTML', 'CSS', 'JavaScript', 'REACT'],
-        externalLink: 'https://www.wikipedia.org/',
-        slug:'portfolio-site',
+        externalLink: 'https://github.com/ajshoesmith/Portfolio-Site',
+        slug:'',
 
         Body() 
         {

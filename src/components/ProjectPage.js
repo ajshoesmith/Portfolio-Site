@@ -3,6 +3,7 @@ import { useParams, useLocation } from 'react-router-dom';
 import projectsData from '../data/data.js';
 import PageCentered from './PageCentered.js'; 
 import TableOfContents from './TableOfContents.js';
+import ReturnToTopButton from './ReturnToTopButton.js';
 import { useEffect } from 'react';
 
 function ProjectPage() {
@@ -23,13 +24,15 @@ function ProjectPage() {
 
     return (
         <div className='background' style={{paddingTop: '40px'}}>
-            <div style={{justifySelf:'center', display: 'flex', justifyContent: 'center', width: '80%', maxWidth: '880px'}}>
-            <div className='side-column-interactions'>
-                <TableOfContents container={'.content-container'}/>
-            </div>
+            <div id="top" style={{justifySelf:'center', display: 'flex', justifyContent: 'center', width: '80%', maxWidth: '880px'}}>
+                <div className='side-column-interactions'>
+                    <TableOfContents container={'.content-container'}/>
+                </div>
             
-            <PageCentered body={project.Body()}/>
-        </div>  
+                <PageCentered body={project.Body()}/>
+            
+            </div>  
+            <ReturnToTopButton pathId='top'/>
         </div>
         
     );

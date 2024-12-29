@@ -17,10 +17,15 @@ export default function DropDownNavLink(props) {
             {opacity: '0', visibility: 'false', pointerEvents: 'none' /*, pointerEvents: 'none' */}}>
                 <ul>
                     {props.dropdownContent.map(content => (
-                        <li><Link to={`${props.directory}/${content.slug}`}>{content.title}</Link></li>
+                        <li>
+                            {!content.externalLink ? <Link to={`/en/projects/${content.slug}`}>{content.title}</Link> : 
+                                                    <a href={content.externalLink}>{content.title}</a>}
+                        </li>
                     ))}
                 </ul>
             </div>
         </div>
     );
 }
+
+//                        <li><Link to={`${props.directory}/${content.slug}`}>{content.title}</Link></li>

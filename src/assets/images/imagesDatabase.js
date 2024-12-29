@@ -5,6 +5,8 @@ import iconManufacturing from './icon-manufacturing.png';
 import iconDevTools from './icon-dev_tools.png';
 
 import portrait from './Avery.jpg';
+import signature from './signature.png';
+import background from './backgroundV2.png';
 
 /*      RC PROJECT      */
 import thumbFireRC from '../projects/rc-firetruck/images/right-angle.png';
@@ -22,7 +24,9 @@ import prjGameInputDemo from '../projects/game/v0-1-15-input-demo.mp4';
 /*      REACT SITE      */
 import thumbPortfolio from '../projects/react_site/thumb.png';
 
-export {portrait,
+export {background,
+        signature,
+        portrait,
         thumbMobileGame, 
         thumbFireRC, 
         thumbPortfolio, 

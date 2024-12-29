@@ -5,12 +5,12 @@ import {iconProgLang, iconWebDev, iconDevTools, iconManufacturing} from '../asse
 
 const skills = [
     {
-        title: 'Frontend Development',
+        title: 'Front-End Development',
         icon: iconWebDev,
         elements: ['HTML', 'CSS', 'JavaScript', 'React']
     },
     {
-        title: 'Backend Development',
+        title: 'Back-End Development',
         icon: iconProgLang,
         elements: ['C#','PHP', 'SQL', 'C++', 'MATLAB']
     },
@@ -30,9 +30,9 @@ function SkillsContainer({id}) {
     return (
         <div className='skills-body' id={id}>
             <h1>Skills</h1>
-            <p> I'm a straightforward guy with a passion for creating. <br/>
-             Whether software or mechanical, I love bringing ideas to life.<br/>
-             Here are some of the tools I rely on.</p>
+            <p>Whether in mechanical design or software development, <br/>
+            I thrive on using innovative tools and technologies to create practical solutions.<br/>
+            Here are a few that I rely on.</p>
         
             <div className='skills-container'>
                 {skills.map(skill => (    // element is like an aspect of the skills (i.e. C# is an element of programming)

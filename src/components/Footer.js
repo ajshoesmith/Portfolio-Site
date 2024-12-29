@@ -6,7 +6,7 @@ function Footer() {
     return(
         <footer className='footer'>
             <div className="footer-content">
-                <p>&copy; 2024 Avery Shoesmith. All rights reserved - Handcrafted by Yours Truly</p>
+                <p>&copy; 2024 Avery Shoesmith. All rights reserved - Handcrafted by yours truly</p>
             </div>
         </footer>
     );

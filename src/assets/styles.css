@@ -17,6 +17,7 @@
   padding: 20px;
   height: 8vh;
   background-color: var(--header-background);
+  border-bottom: 2px solid var(--primary-colour);
 }
 
 .logo {
@@ -48,33 +49,21 @@
 /*#endregion HEADER */
 
 /*#region INTRODUCTION */
-.introduction {
-    padding: 40px;
-    
-  /* background: linear-gradient(270deg, var(--primary-colour), var(--secondary-colour)); */
-
-  /* animation: gradient 15s ease infinite; */
-
-  /* Typing */
-  
-  color: white;
-  font-family: 'Courier New', monospace;
-  
-  
-}
 
 .introduction {
-  height: 1200px;
-  width: 1000px;
+
   background-color: transparent;
   display: flex; /* Use flexbox to center the content */
   flex-direction: column; /* Stack the content vertically */
   justify-content: center; /* Vertically center the content */
   align-items: center; /* Horizontally center the content */
   text-align: center; /* Center-align the text */
+  color: white;
+
   padding: 20px; /* Add padding for some space around the content */
   box-sizing: border-box; /* Ensure padding is included in width calculation */
-  min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
+  height: 80vh; /* Ensure the container takes up at least the full viewport height */
+  min-height: 600px;
   width: 100%; /* Full width */
 }
 
@@ -92,8 +81,13 @@
 .introduction img {
   border-radius: 50%;
   width: auto;
-  height: 400px;
+  height: auto 200px;
   max-height: 30%;
+}
+
+.introduction img:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s ease;
 }
 
 

@@ -41,6 +41,8 @@
 }
 
 .background {
-  background-image: linear-gradient(300deg, var(--background-secondary), var(--background-tertiary));
+  /* background-image: linear-gradient(300deg, var(--background-secondary), var(--background-tertiary)); */
+  background-image: url('../images/backgroundV2.png');
+  background-repeat: repeat;
    margin-top: '40px';
 }

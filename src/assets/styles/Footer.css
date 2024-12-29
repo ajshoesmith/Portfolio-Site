@@ -7,6 +7,7 @@ body {
   }
   
   .footer {
+    border-top: 2px solid var(--primary-colour);
     background-color: var(--header-background);
     color: var(--header-text-colour);
     padding: 20px 0;
