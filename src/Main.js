@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import {React, useRef } from 'react';
+import {React, useRef, useEffect } from 'react';
 import ProjectGrid from './components/ProjectGrid.js';
 import SkillsContainer from './components/SkillsContainer.js';
 import Introduction from './components/Introduction.js';
@@ -7,6 +7,10 @@ import ReturnToTopButton from './components/ReturnToTopButton.js';
 import styles from './assets/styles/MasterStyles.css';
 
 function Main() {
+  useEffect(() => {
+    document.title = "Avery Shoesmith's Portfolio";
+  }, []);
+
   return (
     <div className="App">
       

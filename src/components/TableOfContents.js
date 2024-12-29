@@ -47,7 +47,7 @@ export default function TableOfContents(props) {
     return(
         <div className='table-of-contents'>
 
-            <button className='toc-toggle' onClick={toggleVisibility}>
+            <button className='toc-toggle' type='button' name="tocToggle" onClick={toggleVisibility}>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

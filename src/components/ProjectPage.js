@@ -9,19 +9,20 @@ import { useEffect } from 'react';
 function ProjectPage() {
     
     const location = useLocation();
+    const { slug } = useParams();
+    const project = projectsData.find(proj => proj.slug === slug);
+    
 
     // Scroll to top when page gets loaded
     useEffect(() => {
         window.scrollTo(0, 0);
+        document.title = `${project.title} - Avery Shoesmith's Portfolio`;
     }, [location]); // Re-run when the location (route) changes
-
-    const { slug } = useParams();
-    const project = projectsData.find(proj => proj.slug === slug);
 
     if (!project) {
         return <p>Project not found</p>;
     }
-
+    
     return (
         <div className='background' style={{paddingTop: '40px'}}>
             <div id="top" style={{justifySelf:'center', display: 'flex', justifyContent: 'center', width: '80%', maxWidth: '880px'}}>
